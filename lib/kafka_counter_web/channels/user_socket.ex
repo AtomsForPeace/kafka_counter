@@ -2,7 +2,8 @@ defmodule KafkaCounterWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", KafkaCounterWeb.RoomChannel
+  channel "room:*", KafkaCounterWeb.RoomChannel
+  channel "feed:lobby*", KafkaCounterWeb.FeedChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
