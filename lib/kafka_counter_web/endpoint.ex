@@ -2,10 +2,6 @@ defmodule KafkaCounterWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :kafka_counter
   use KafkaEx.GenConsumer
 
-  require Logger
-
-  alias KafkaEx.Protocol.Fetch.Message
-
   socket "/socket", KafkaCounterWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
